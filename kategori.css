@@ -1,0 +1,219 @@
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff8f3;
+    color:#333;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    background:#fff;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    width:90%;
+    height:80px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#d2691e;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.logo i{
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#d2691e;
+}
+
+.menu-icon a{
+    color:#d2691e;
+    text-decoration:none;
+    font-size:24px;
+    position:relative;
+}
+
+#cart-count{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    width:20px;
+    height:20px;
+    background:red;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    color:#d2691e;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:17px;
+    color:#666;
+}
+
+/* ===========================
+   KATEGORI
+=========================== */
+
+.kategori-container{
+    width:90%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    padding-bottom:70px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+    text-align:center;
+}
+
+.card-body h2{
+    color:#d2691e;
+    margin-bottom:10px;
+}
+
+.card-body p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.card-body button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#d2691e;
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card-body button:hover{
+    background:#b45309;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#d2691e;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    height:auto;
+    padding:20px 0;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    margin:20px 0;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+.hero p{
+    font-size:15px;
+}
+
+.kategori-container{
+    grid-template-columns:1fr;
+}
+
+.card img{
+    height:200px;
+}
+
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout BoluKu</title>
+
+<link rel="stylesheet" href="checkout.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-cake-candles"></i>
+
+<span>BoluKu</span>
+
+</div>
+
+</nav>
+
+</header>
+
+<div class="container">
+
+<div class="kiri">
+
+<h2>Data Penerima</h2>
+
+<input type="text" id="nama" placeholder="Nama Lengkap">
+
+<input type="text" id="telepon" placeholder="Nomor HP">
+
+<textarea
+id="alamat"
+placeholder="Alamat Lengkap"></textarea>
+
+<select id="pembayaran">
+
+<option value="">Pilih Metode Pembayaran</option>
+
+<option>Transfer Bank</option>
+
+<option>E-Wallet</option>
+
+<option>COD</option>
+
+</select>
+
+</div>
+
+<div class="kanan">
+
+<h2>Ringkasan Pesanan</h2>
+
+<div id="checkout-items"></div>
+
+<hr>
+
+<h3>Total :
+<span id="total"></span>
+</h3>
+
+<button id="pesan">
+
+Buat Pesanan
+
+</button>
+
+</div>
+
+</div>
+
+<script src="checkout.js"></script>
+
+</body>
+</html>

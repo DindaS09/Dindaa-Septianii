@@ -1,0 +1,188 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#fff7f2;
+color:#333;
+}
+
+/* Navbar */
+
+header{
+background:#ff7b54;
+padding:18px 40px;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+color:white;
+font-size:26px;
+font-weight:700;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+}
+
+.active{
+font-weight:bold;
+}
+
+/* Hero */
+
+.hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(to right,#ffb38a,#ff7b54);
+color:white;
+}
+
+.hero h1{
+font-size:42px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+/* About */
+
+.about{
+max-width:1200px;
+margin:60px auto;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+padding:0 20px;
+}
+
+.about img{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+.about-text h2{
+color:#ff7b54;
+margin-bottom:20px;
+}
+
+.about-text p{
+margin-bottom:15px;
+line-height:1.8;
+}
+
+/* Visi Misi */
+
+.visi-misi{
+max-width:1200px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+text-align:center;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.card i{
+font-size:55px;
+color:#ff7b54;
+margin-bottom:20px;
+}
+
+/* Keunggulan */
+
+.keunggulan{
+padding:70px 20px;
+text-align:center;
+}
+
+.keunggulan h2{
+color:#ff7b54;
+margin-bottom:40px;
+}
+
+.fitur{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1200px;
+margin:auto;
+}
+
+.fitur-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.fitur-card:hover{
+transform:translateY(-8px);
+}
+
+.fitur-card i{
+font-size:45px;
+color:#ff7b54;
+margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+margin-top:60px;
+background:#ff7b54;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}

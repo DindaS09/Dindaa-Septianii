@@ -1,0 +1,321 @@
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#fff7f2;
+    color:#333;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+    background:#ff7b54;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+}
+
+.logo{
+    color:white;
+    font-size:26px;
+    font-weight:700;
+}
+
+.logo i{
+    margin-right:8px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active{
+    color:#ffe6d5;
+}
+
+/* =========================
+   JUDUL
+========================= */
+
+.judul{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.judul h1{
+    font-size:34px;
+    color:#ff7b54;
+    margin-bottom:10px;
+}
+
+.judul p{
+    color:#666;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* =========================
+   CARD PESANAN
+========================= */
+
+.card-riwayat{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card-riwayat:hover{
+    transform:translateY(-5px);
+}
+
+.header-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #eee;
+    padding-bottom:15px;
+    margin-bottom:15px;
+}
+
+.kode{
+    font-size:18px;
+    font-weight:600;
+    color:#ff7b54;
+}
+
+.status{
+    background:#28a745;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+/* =========================
+   DETAIL
+========================= */
+
+.detail p{
+    margin:8px 0;
+    color:#555;
+}
+
+.detail strong{
+    color:#333;
+}
+
+/* =========================
+   PRODUK
+========================= */
+
+.produk-list{
+    margin-top:15px;
+}
+
+.produk-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:12px 0;
+    border-bottom:1px dashed #ddd;
+}
+
+.produk-item:last-child{
+    border-bottom:none;
+}
+
+.nama-produk{
+    font-weight:500;
+}
+
+.jumlah{
+    color:#666;
+}
+
+.harga{
+    color:#ff7b54;
+    font-weight:bold;
+}
+
+/* =========================
+   TOTAL
+========================= */
+
+.total{
+    text-align:right;
+    margin-top:20px;
+    font-size:22px;
+    font-weight:700;
+    color:#ff7b54;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button-group{
+    margin-top:20px;
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+}
+
+.btn{
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    color:white;
+    transition:.3s;
+    font-size:15px;
+}
+
+.btn-detail{
+    background:#3498db;
+}
+
+.btn-detail:hover{
+    background:#2b7db6;
+}
+
+.btn-hapus{
+    background:#e74c3c;
+}
+
+.btn-hapus:hover{
+    background:#c0392b;
+}
+
+/* =========================
+   KOSONG
+========================= */
+
+.kosong{
+    text-align:center;
+    background:white;
+    padding:60px 20px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.kosong i{
+    font-size:80px;
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.kosong h2{
+    color:#555;
+    margin-bottom:10px;
+}
+
+.kosong p{
+    color:#888;
+}
+
+.kosong a{
+    display:inline-block;
+    margin-top:25px;
+    background:#ff7b54;
+    color:white;
+    text-decoration:none;
+    padding:14px 25px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.kosong a:hover{
+    background:#ff6331;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    margin-top:50px;
+    background:#ff7b54;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.header-card{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:10px;
+}
+
+.produk-item{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:8px;
+}
+
+.button-group{
+    flex-direction:column;
+}
+
+.btn{
+    width:100%;
+    text-align:center;
+}
+
+.total{
+    text-align:left;
+}
+
+}
